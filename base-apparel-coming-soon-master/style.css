@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+    --Font-Josefin: 'Josefin Sans', sans-serif;
+}
+
+body {
+    font-family: var(--Font-Josefin);
+    font-size: 16px;
+}
+
+main {
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+main > img {
+    height: 100vh;
+    width: 45vw;
+}
+
+.text {
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    margin: 2rem 0rem 2rem 5rem;
+}
+
+.text > h1 {
+    font-size: 4em;
+    margin: 4rem 0rem 1rem 0rem;
+}
+
+.text > h1 > span {
+    color: var(--Desaturated-Red);
+    font-weight: 300;
+}
+
+.text > p {
+    text-align: justify;
+    color: var(--Desaturated-Red);
+    font-weight: 300;
+    max-width: 30vw;
+}
+
+.text > img {
+    align-self: flex-start;
+    order: -1;
+    max-width: 100em;
+}
+
+.buttonText{
+    display: flex;
+    align-items: center;
+}
+
+.inputText {
+    position: relative;
+}
+
+.iconError {
+    display: none;
+    position: absolute;
+    bottom: 25px;
+    right: 25%;
+}
+
+#email {
+    margin: 1rem 0rem;
+    padding: 12px 15px;
+    border-radius: 20px;
+    border: 1px solid var(--Desaturated-Red);
+    width: 30vw;
+}
+
+#email::placeholder{
+    color: hsla(0, 36%, 70%, 0.705);
+}
+
+#button {
+    position: absolute;
+    border-radius: 20px;
+    width: 70px;
+    height: 42px;
+    border: none;
+    bottom: 15px;
+    right: -5%;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+}
+
+#button:hover {
+    height: 45px;
+    cursor: pointer;
+}
+
+#button:active {
+    background-color: var(--Desaturated-Red);
+}
+
+#errorEmail{
+    display: none;
+    font-size: 10px;
+    color: red;
+    margin-left: 20px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
