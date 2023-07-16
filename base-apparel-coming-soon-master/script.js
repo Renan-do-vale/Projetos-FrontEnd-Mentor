@@ -3,7 +3,14 @@ let email = document.getElementById('email')
 let form = document.getElementById('buttonText')
 let iconError = document.getElementById('iconError')
 let errorEmail = document.getElementById('errorEmail')
+let main = document.querySelector('main')
 
+
+main.addEventListener('click', () => {
+    iconError.style.display = 'none'
+    errorEmail.style.display = 'none'
+    email.style.borderColor = 'hsl(0, 35%, 64%)'
+})
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
