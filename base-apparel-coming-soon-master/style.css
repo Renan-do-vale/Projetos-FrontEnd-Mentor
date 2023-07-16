@@ -121,6 +121,11 @@ main > img {
 
 #button:active {
     background-image: linear-gradient(135deg, hsla(0, 80%, 86%, 0.568),hsla(0, 74%, 74%, 0.562));
+    height: 100%;
+    top: 0;
+    width: 21%;
+    right: -1%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.384);
 }
 
 #errorEmail{
