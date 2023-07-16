@@ -16,7 +16,6 @@ form.addEventListener('submit', (e) => {
         iconError.style.display = 'none'
         errorEmail.style.display = 'none'
         email.style.borderColor = 'green'
-        console.log(email.value)
     }
 })
 

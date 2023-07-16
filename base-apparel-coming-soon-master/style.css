@@ -27,10 +27,6 @@ main {
     align-items: center;
 }
 
-main > img {
-    height: 100vh;
-    width: 45vw;
-}
 
 .text {
     background-image: url("images/bg-pattern-desktop.svg");
@@ -81,7 +77,6 @@ main > img {
     border-radius: 30px;
     margin: 10px 0px;
 }
-
 
 #iconError {
     display: none;
@@ -141,5 +136,80 @@ main > img {
     margin-left: 20px;
 }
 
+.imgDesktop {
+    height: 100vh;
+    width: 45vw;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.473);
+}
+
+.imgMobile {
+    display: none;
+}
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media(max-width: 912px) {
+
+    main {
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .text {
+        height: 100vh;
+        width: 100vw;
+        padding: 0rem 0rem;
+        align-items: center;
+        margin: 0rem 0rem;
+    }
+
+    .logo{
+        margin: 2rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .text > .container > h1 {
+        font-size: 3em;
+        text-align: center;
+        padding: 0rem 0rem;
+        margin-top: 3rem;
+    }
+
+    .text > .container > p {
+        max-width: 300px;
+        text-align: center;
+        margin: 2rem 0rem;
+    }
+
+    #buttonText {
+        width: 90%;
+        margin-top: 2rem;
+    }
+
+    .imgDesktop {
+        display: none;
+    }
+
+    .imgMobile {
+        display: block;
+        width: 100vw;
+        height: 100%;
+    }
+
+    #errorEmail {
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+        align-self: flex-start;
+    }
+}
