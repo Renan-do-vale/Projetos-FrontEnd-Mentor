@@ -29,7 +29,7 @@ body {
     background: var(--primaryColor1) url("images/bg-intro-desktop.png") center center/cover no-repeat fixed;
 }
 
-section {
+.text {
     padding: 0rem 2rem;
     color: white;
     text-align: justify;
@@ -37,13 +37,13 @@ section {
     margin-left: 5rem;
 }
 
-section > h1 {
+body > section > h1 {
     font-weight: 700;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-#divmain {
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,7 +67,7 @@ strong {
     font-weight: 700;
 }
 
-main {
+.container_form {
     background-color: white;
     width: 32.25rem;
     height: 31rem;
@@ -76,13 +76,13 @@ main {
     flex-direction: column;
 }
 
-main > form {
+.container_form > form {
     display: flex;
     flex-direction: column;
     margin: 1rem;
 }
 
-main > form > input {
+.container_form > form > input {
     border-radius: 10px;
     padding: 1em;
     margin: 1em;
