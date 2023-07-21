@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: var(--fontPoppins);
+}
+
+:root {
+    --primaryColor1: hsl(0, 100%, 74%);
+    --primaryColor2: hsl(154, 59%, 51%);
+
+    --accentColor: hsl(248, 32%, 49%);
+
+    --neutralColor1: hsl(249, 10%, 26%);
+    --neutralColor2: hsl(246, 25%, 77%);
+
+    --fontPoppins: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primaryColor1);
+    background: var(--primaryColor1) url("images/bg-intro-desktop.png") center center/cover no-repeat fixed;
+}
+
+section {
+    padding: 0rem 2rem;
+    color: white;
+    text-align: justify;
+    width: 470px;
+    margin-left: 5rem;
+}
+
+section > h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#divmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+article {
+    width: 32.25rem;
+    background-color: var(--accentColor);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+main {
+    background-color: white;
+    width: 32.25rem;
+    height: 31rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+main > form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+main > form > input {
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+    border: 2px solid var(--neutralColor2);
+}
+
+#buttonSubmit {
+    border: none;
+    background-color: var(--primaryColor2);
+    color: white;
+    font-weight: 600;
+    margin: 1rem 1rem 0rem 1rem;
+}
+
+form > p {
+    text-align: center;
+    margin: 0.5rem;
+    font-size: 0.5em;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
