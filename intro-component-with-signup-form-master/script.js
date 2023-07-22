@@ -4,11 +4,9 @@ let email = document.getElementById("email")
 let password = document.getElementById("password")
 let form_submit = document.getElementById('form_submit')
 
-
-
-form_submit.addEventListener('submit', (e) => {
-    e.preventDefault()
-
+function submitForm(event) {
+    event.preventDefault()
+    
     if(first_name.value === "") {
         let error1i = document.getElementById("error1i")
         let error1m = document.getElementById("error1m")
@@ -34,7 +32,7 @@ form_submit.addEventListener('submit', (e) => {
         error2m.classList.add("hidden")
         last_name.style.borderColor = 'green'
     }
-
+    
     if(email.value === "" || validEmail(email.value) !== true) {
         let error3i = document.getElementById("error3i")
         let error3m = document.getElementById("error3m")
@@ -48,7 +46,7 @@ form_submit.addEventListener('submit', (e) => {
         error3m.classList.add("hidden")
         email.style.borderColor = 'green'
     }
-
+    
     if(password.value === "" || validpass(password.value) !== true) {
         let error4i = document.getElementById("error4i")
         let error4m = document.getElementById("error4m")
@@ -62,7 +60,11 @@ form_submit.addEventListener('submit', (e) => {
         error4m.classList.add("hidden")
         password.style.borderColor = 'green'
     }
-})
+    // document.getElementById('form_submit').removeEventListener('submit',submitForm)
+}
+
+
+form_submit.addEventListener('submit', submitForm)
 
 
 
