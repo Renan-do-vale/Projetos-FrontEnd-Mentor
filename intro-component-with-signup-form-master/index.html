@@ -19,11 +19,31 @@
   <main>
     <article><strong>Try it free 7 days</strong> then $20/mo. thereafter</article>
     <section class="container_form">
-        <form action="" method="post" autocomplete="on">
-          <input type="text" id="FirstN" placeholder="First Name">
-          <input type="text" id="lastN" placeholder="Last Name">
-          <input type="email" id="email" placeholder="Email Address" autocomplete="email">
-          <input type="password" id="password" placeholder="password">
+        <form autocomplete="on">
+          <div class="input_container">
+            <input type="text" id="firstN" placeholder="First Name">
+            <img src="images/icon-error.svg" id="error1i" alt="iconError" class="iconError hidden">
+          </div>
+          <span id="error1m" class="error_message"></span>
+
+          <div class="input_container">
+            <input type="text" class="input_teste" placeholder="Last Name">
+            <img src="images/icon-error.svg" alt="iconError" class="iconError hidden">
+          </div>
+          <span class="error_message hidden">Last Name cannot be empty</span>
+
+          <div class="input_container">
+            <input type="email" class="input_teste" placeholder="Email Address" autocomplete="email">
+            <img src="images/icon-error.svg" alt="iconError" class="iconError hidden">
+          </div>
+          <span class="error_message hidden">Looks like this is not an email</span>
+
+          <div class="input_container">
+            <input type="password" class="input_teste" placeholder="password">
+            <img src="images/icon-error.svg" alt="iconError" class="iconError hidden">
+          </div>
+          <span class="error_message hidden">Passwird cannot be empy</span>
+
           <input type="submit" id="buttonSubmit" value="CLAIM YOUR FREE TRIAL">
           <p>By clicking the button, you are agreeing to our <a href="">Terms and Services</a></p>
         </form>
@@ -37,4 +57,5 @@
     </p>
   </footer> -->
 </body>
+<script src="script.js"></script>
 </html>
