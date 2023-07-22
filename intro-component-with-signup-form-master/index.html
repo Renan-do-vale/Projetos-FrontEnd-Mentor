@@ -19,30 +19,30 @@
   <main>
     <article><strong>Try it free 7 days</strong> then $20/mo. thereafter</article>
     <section class="container_form">
-        <form autocomplete="on">
+        <form autocomplete="on" id="form_submit">
           <div class="input_container">
-            <input type="text" id="firstN" placeholder="First Name">
+            <input type="text" id="firstN" placeholder="First Name" autocomplete="name">
             <img src="images/icon-error.svg" id="error1i" alt="iconError" class="iconError hidden">
           </div>
-          <span id="error1m" class="error_message"></span>
+          <span id="error1m" class="error_message hidden">First Name cannot be empty</span>
 
           <div class="input_container">
-            <input type="text" class="input_teste" placeholder="Last Name">
-            <img src="images/icon-error.svg" alt="iconError" class="iconError hidden">
+            <input type="text" id="lastN" placeholder="Last Name" autocomplete="family-name">
+            <img src="images/icon-error.svg" alt="iconError" class="iconError hidden" id="error2i">
           </div>
-          <span class="error_message hidden">Last Name cannot be empty</span>
+          <span class="error_message hidden" id="error2m">Last Name cannot be empty</span>
 
           <div class="input_container">
-            <input type="email" class="input_teste" placeholder="Email Address" autocomplete="email">
-            <img src="images/icon-error.svg" alt="iconError" class="iconError hidden">
+            <input type="text" id="email" placeholder="Email Address" autocomplete="email">
+            <img src="images/icon-error.svg" id="error3i" alt="iconError" class="iconError hidden">
           </div>
-          <span class="error_message hidden">Looks like this is not an email</span>
+          <span class="error_message hidden" id="error3m">Provide a valid e-mail</span>
 
           <div class="input_container">
-            <input type="password" class="input_teste" placeholder="password">
-            <img src="images/icon-error.svg" alt="iconError" class="iconError hidden">
+            <input type="password" id="password" placeholder="password">
+            <img src="images/icon-error.svg" alt="iconError" id="error4i" class="iconError hidden">
           </div>
-          <span class="error_message hidden">Passwird cannot be empy</span>
+          <span class="error_message hidden" id="error4m">Provide a safe password (min:8 character)</span>
 
           <input type="submit" id="buttonSubmit" value="CLAIM YOUR FREE TRIAL">
           <p>By clicking the button, you are agreeing to our <a href="">Terms and Services</a></p>
