@@ -162,6 +162,20 @@ form>p {
     color: white;
 }
 
+#form_submit > p {
+    color: gray;
+}
+
+#form_submit > p > a{
+    color: red;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#form_submit > p > a:hover {
+    text-decoration: underline;
+}
+
 .attribution a {
     font-weight: 700;
     color: var(--accentColor);
