@@ -33,11 +33,11 @@ body {
     padding: 0rem 2rem;
     color: white;
     text-align: justify;
-    max-width: 500px;
+    width: 500px;
     margin-left: 5rem;
 }
 
-body>section>h1 {
+.text > h1 {
     text-align: left;
     font-weight: 700;
     font-size: 3rem;
@@ -163,3 +163,58 @@ form>p {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+
+@media(max-width: 900px) {
+    
+    article {
+        width: 25rem;
+    }
+    
+    .container_form{
+        width: 25rem;
+    }
+
+}
+
+
+@media(max-width: 788px) {
+    body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background: var(--primaryColor1) url("images/bg-intro-mobile.png") center center/cover no-repeat fixed;
+    }
+    
+    .text {
+        width: 100%;
+        margin: 0;
+    }
+
+    .text > h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .text > p {
+        text-align: center;
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+    }
+    
+    .container_form{
+        width: 100%;
+    }
+
+    main {
+        margin: 1rem;
+    }
+
+}
+
+
+
