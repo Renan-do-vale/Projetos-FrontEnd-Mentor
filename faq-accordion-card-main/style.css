@@ -71,8 +71,8 @@ body {
 }
 
 .contain_faq > h1 {
-    font-size: 2em;
-    margin-bottom: 2em;
+    font-size: 2.5em;
+    margin-bottom: 1em;
     color: var(--very-dark-desaturated-blue);
 }
 
