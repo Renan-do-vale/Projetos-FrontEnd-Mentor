@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --font-Kumbh: 'Kumbh Sans', sans-serif;
+
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+
+    --light-grayish-blue: hsla(240, 4%, 91%, 0.582);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-Kumbh);
+    font-size: 12px;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--soft-violet), var(--soft-blue));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain_main {
+    display: flex;
+    background-color: white;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    min-width: 850px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.contain_img {
+    width: 50%;
+    background-color: red;
+}
+
+.contain_img > img:nth-child(1){
+    width: 50%;
+    position: absolute;
+    right: 58%;
+    bottom: 20%;
+    z-index: 2;
+}
+
+.contain_img > img:nth-child(2){
+    width: 100%;
+    position: absolute;
+    right: 60%;
+    bottom: -15%;
+}
+
+
+.contain_faq {
+    width: 50%;
+    height: 100%;
+    padding: 40px 70px 0px 0px;
+}
+
+.contain_faq > h1 {
+    font-size: 2em;
+    margin-bottom: 2em;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.contain_question > h2 {
+    color: var(--dark-grayish-blue);
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+}
+
+
+.contain_question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contain_paragraph {
+    width: 85%;
+    text-align: justify;
+    margin-bottom: 1em;
+    color: var(--dark-grayish-blue);
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+hr {
+    margin: 10px 0px;
+    border-color: var(--light-grayish-blue);
+}
+
+.box_contain {
+    position: relative;
+}
+
+.box{
+    width: 22%;
+    position: absolute;
+    right: 89%;
+    bottom: 25%;
+    z-index: 3;
+}
+
+.arrow {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
