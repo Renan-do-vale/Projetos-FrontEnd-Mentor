@@ -268,7 +268,7 @@ hr {
     }
 
     body {
-        align-items: flex-end;
+        align-items: center;
     }
 
     .contain_img_mobile > img:nth-child(1){
