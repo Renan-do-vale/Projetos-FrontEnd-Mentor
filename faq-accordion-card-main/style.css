@@ -28,7 +28,6 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -126,7 +125,7 @@ hr {
     position: absolute;
     right: 89%;
     bottom: 25%;
-    z-index: 1;
+    z-index: 3;
 }
 
 .arrow {
@@ -137,21 +136,6 @@ hr {
     display: none;
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-    color: white;
-    margin-top: 1rem;
-  }
-
-  .attribution a {
-    color: var(--Soft-red);
-    text-decoration: none;
-  }
-
-  .attribution a:hover {
-    text-decoration: underline;
-  }
 
 @media (max-width: 940px) {
     .contain_main {
@@ -181,7 +165,6 @@ hr {
         position: absolute;
         right: 58%;
         bottom: 30%;
-        z-index: 2;
     }
     
     .contain_img_desktop > img:nth-child(2){
@@ -268,9 +251,6 @@ hr {
         left: 10%;
     }
 
-    .attribution {
-        display: none;
-      }
 
 }
 
