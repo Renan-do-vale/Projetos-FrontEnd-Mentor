@@ -28,6 +28,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -140,12 +141,18 @@ hr {
 .attribution {
     font-size: 11px;
     text-align: center;
+    color: white;
+    margin-top: 1rem;
   }
 
   .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--Soft-red);
+    text-decoration: none;
   }
 
+  .attribution a:hover {
+    text-decoration: underline;
+  }
 
 @media (max-width: 940px) {
     .contain_main {
@@ -197,6 +204,9 @@ hr {
 
 @media (max-width: 665px) {
 
+    body {
+        flex-direction: row;
+    }
 
     .contain_main {
         min-width: 340px;
@@ -258,6 +268,10 @@ hr {
         bottom: 80%;
         left: 10%;
     }
+
+    .attribution {
+        display: none;
+      }
 
 }
 
