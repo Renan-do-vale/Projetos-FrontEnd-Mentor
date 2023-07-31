@@ -172,6 +172,7 @@ hr {
         position: relative;
         overflow: visible;
         margin-bottom: 1rem;
+        margin-top: 1rem;
 
     }
 
@@ -254,5 +255,72 @@ hr {
         position: absolute;
         bottom: 80%;
         left: 10%;
+    }
+}
+
+
+@media (max-height: 655px) {
+
+
+    .contain_main {
+        overflow: scroll;
+        width: 100vw;
+        height: 400px;
+        flex-direction: column;
+        position: relative;
+        overflow: visible;
+        margin-bottom: 0rem;
+        border-radius: 0px;
+
+    }
+
+    .contain_faq > h1 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 0em;
+    }
+
+    .contain_question > h2 {
+        margin-top: 20px;
+        font-size: 1em;
+    }
+
+    .contain_paragraph {
+        font-size: 0.9em;
+        width: 90%;
+        text-align: left;
+    }
+
+    .contain_faq {
+        width: 100%;
+        height: 90%;
+        padding: 0px 20px;
+    }
+
+    .contain_img_desktop {
+        display: none;
+    }
+
+    .box_desktop{
+        display: none;
+    }
+
+    .contain_img_mobile{
+        display: block;
+        height: 25%;
+    }
+
+    .contain_img_mobile > img:nth-child(1){
+        width: 50%;
+        position: absolute;
+        bottom: 84.5%;
+        left: 25%;
+    }
+
+    .contain_img_mobile > img:nth-child(2){
+        width: 50%;
+        position: absolute;
+        bottom: 80%;
+        left: 24%;
     }
 }
