@@ -259,12 +259,12 @@ hr {
 }
 
 
-@media (max-height: 655px) {
+@media (max-height: 500px) {
 
 
     .contain_main {
         overflow: scroll;
-        width: 100vw;
+        width: 90vw;
         height: 400px;
         flex-direction: column;
         position: relative;
