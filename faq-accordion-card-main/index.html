@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  
+
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
   <div class="box_contain">
-    <img class="box" src="images/illustration-box-desktop.svg" alt="box_desktop">
+    <img class="box_desktop" src="images/illustration-box-desktop.svg" alt="box_desktop">
     <main class="contain_main">
-      <div class="contain_img">
+      <div class="contain_img_desktop">
         <img src="images/illustration-woman-online-desktop.svg" alt="woman-desktop">
         <img src="images/bg-pattern-desktop.svg" alt="pattern-desktop">
+      </div>
+      <div class="contain_img_mobile">
+        <img src="images/illustration-woman-online-mobile.svg" alt="woman-desktop">
+        <img src="images/bg-pattern-mobile.svg" alt="pattern_mobile">
       </div>
       <section class="contain_faq">
         <h1>FAQ</h1>
@@ -55,13 +68,15 @@
           <h2>Can I cancel my subscription?</h2>
           <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow">
         </div>
-        <p class="contain_paragraph hidden">Yes! Send us a message and we’ll process your request no questions asked.</p>
+        <p class="contain_paragraph hidden">Yes! Send us a message and we’ll process your request no questions asked.
+        </p>
         <hr>
         <div class="contain_question">
-          <h2>Do you provide additional support?</h2>
+          <h2>Do you provide additional support? </h2>
           <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow">
         </div>
-        <p class="contain_paragraph hidden">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+        <p class="contain_paragraph hidden">Chat and email support is available 24/7. Phone lines are open during normal
+          business hours.</p>
         <hr>
       </section>
     </main>
@@ -72,31 +87,63 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
   <script>
-    document.querySelectorAll('.arrow').forEach(e => {
-      e.addEventListener('click', (elemento) => {
-        const elementoDiv = elemento.target.parentNode
-        const paragraph = elementoDiv.nextElementSibling
-        document.querySelectorAll('.contain_paragraph').forEach(e => {
-          if(!e.classList.contains('hidden')) {
-            e.classList.add('hidden')
-            document.querySelectorAll('.contain_question > h2').forEach(e => {
-              e.style.fontWeight = 40
-              e.style.color = 'hsl(240, 6%, 50%)'
-            })
+    // document.querySelectorAll('.arrow').forEach(e => {
+    //   e.addEventListener('click', (elemento) => {
+    //     const elementoDiv = elemento.target.parentNode
+    //     const paragraph = elementoDiv.nextElementSibling
+    //     document.querySelectorAll('.contain_paragraph').forEach(e => {
+    //       if(!e.classList.contains('hidden')) {
+    //         e.classList.add('hidden')
+    //         document.querySelectorAll('.contain_question > h2').forEach(e => {
+    //           e.style.fontWeight = 40
+    //           e.style.color = 'hsl(240, 6%, 50%)'
+    //         })
 
-            document.querySelectorAll('.arrow').forEach(e => {
-              e.style.transform = "rotate(360deg)"
-            })
-          }
-        })
-        if(paragraph.classList.contains('hidden')) {
-          paragraph.classList.remove('hidden')
-          elementoDiv.firstElementChild.style.fontWeight = 700
-          e.style.transform = "rotate(180deg)"
-          elementoDiv.firstElementChild.style.color = 'hsl(238, 29%, 16%)'
-        }
+    //         document.querySelectorAll('.arrow').forEach(e => {
+    //           e.style.transform = "rotate(360deg)"
+    //         })
+    //       }
+    //     })
+    //     if(paragraph.classList.contains('hidden')) {
+    //       paragraph.classList.remove('hidden')
+    //       elementoDiv.firstElementChild.style.fontWeight = 700
+    //       e.style.transform = "rotate(180deg)"
+    //       elementoDiv.firstElementChild.style.color = 'hsl(238, 29%, 16%)'
+    //     }
+    //   })
+    // })
+
+
+    container = document.querySelectorAll('.contain_question')
+    container.forEach(e => {
+      e.addEventListener('click', elemento => {
+        console.log(elemento.target)
+          document.querySelectorAll('.contain_paragraph').forEach(e => {
+            if (!e.classList.contains('hidden')) {
+              e.classList.add('hidden')         
+              document.querySelectorAll('.arrow').forEach(e => {
+                e.style.transform = "rotate(360deg)"
+              })
+              document.querySelectorAll('.contain_question > h2').forEach(e => {
+                e.style.fontWeight = 400
+                e.style.color = 'hsl(240, 6%, 50%)'
+              })
+            }
+          })
+          const paragraph = elemento.target.parentNode.nextElementSibling
+          const h2 = elemento.target
+          const arrow = elemento.target.nextElementSibling
+          if (paragraph.classList.contains('hidden')) {
+            paragraph.classList.remove('hidden')
+            h2.style.fontWeight = 700
+            h2.style.color = 'hsl(238, 29%, 16%)'
+            arrow.style.transform = "rotate(180deg)"
+          }        
       })
     })
+
+
   </script>
 </body>
+
 </html>
