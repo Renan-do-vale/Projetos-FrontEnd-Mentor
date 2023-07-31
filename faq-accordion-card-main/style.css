@@ -259,7 +259,6 @@ hr {
 @media (max-height: 800px) {
     .contain_main {
         height: 525px;
-        margin-bottom: 20px;
 
     }
 
