@@ -144,6 +144,7 @@ hr {
     }
 
     .contain_faq > h1 {
+        padding-top: 40px;
         font-size: 2em;
     }
 
@@ -157,6 +158,28 @@ hr {
 
     .contain_faq {
         padding: 0px 40px 0px 0px;
+    }
+
+    .contain_img_desktop > img:nth-child(1){
+        width: 50%;
+        position: absolute;
+        right: 58%;
+        bottom: 30%;
+        z-index: 2;
+    }
+    
+    .contain_img_desktop > img:nth-child(2){
+        width: 100%;
+        position: absolute;
+        right: 60%;
+        bottom: 5%;
+    }
+
+    .box_desktop{
+        width: 25%;
+        position: absolute;
+        right: 87%;
+        bottom: 30%;
     }
 
 }
